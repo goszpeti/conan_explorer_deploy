@@ -1,0 +1,15 @@
+[settings]
+os=Windows
+arch=x86_64
+compiler=Visual Studio
+compiler.version=17
+compiler.toolset=v142
+&:build_type=RelWithDebInfo
+*:build_type=Release
+[options]
+
+[env]
+CONAN_DISABLE_STRICT_MODE=1 
+
+[conf]
+tools.cmake.cmaketoolchain:generator=Ninja
